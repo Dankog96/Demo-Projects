@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>crash test dummy</title>
+<style>
+body{
+	margin: 0;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 25%;
+	height: 100%;
+	position: fixed;
+	background-color: #555;
+}
+
+li{
+	border-bottom: 1px solid lightgray;
+	height: 12.35%;
+}
+
+li:last-child{
+	border-bottom: none;
+}
+
+li a{
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	color: white;
+	padding: 27px;
+	font-size: 1.2em;
+}
+
+li a:hover{
+	border-left:5px solid lightgreen;
+	display: block;
+}
+
+.hidden a{
+	background-color: white;
+	position: relative;
+	color: black;
+}
+
+.hidden{
+	display: none;
+	margin-top: -23%;
+	margin-left: 100%;
+	width: 50%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.menu:hover .hidden{
+	display: block;
+	border-left: 4px solid red;
+}
+
+
+
+</style>
+</head>
+<body a link="white" vlink="white">
+
+<ul>
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Restaurants</a></li>
+	<li class="menu"><a href="#">Menu</a>
+		<div class="hidden">
+			<a href="#">1-st item</a>
+			<a href="#">2-nd item</a>
+			<a href="#">3rd item</a>
+		</div>
+	</li>
+	<li><a href="#">Best Today</a></li>
+	<li><a href="#">Receipts</a></li>
+	<li><a href="#">Join us!</a></li>
+	<li><a href="#">Find us on the map</a></li>
+	<li><a href="#">For Us</a></li>
+</ul>
+
+<div style="margin-left:24.5%; padding:16px; height:1000px;">
+  <h2>Fixed Full-height Side Nav</h2>
+  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div>
+
+</body>
+</html>
