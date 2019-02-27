@@ -1,0 +1,47 @@
+<html>
+<body>
+<script>
+var bankAccount=400;
+const treshold= 300;
+
+const phonePrise=100;
+const accesoire=5;
+const tax=0.08;
+
+var amount=0;
+
+//function for the tax
+function taxes(amount){
+	return amount = amount * tax;
+}
+//function for the whole amount
+function wholePrice(amount){
+	return "$"+ amount;
+}
+//keep purchasing till we have money in the Bankaccount
+while(amount < bankAccount){
+	amount = amount + phonePrise;
+		if(amount < treshold){
+			amount = amount + accesoire;
+		}
+}
+
+//here we print the bill wi
+console.log("The bill would cost you " + wholePrice(amount) + " without the taxes.");
+
+//lets add the tax now using the ready function for that
+amount = amount + taxes(amount);
+
+//here we print the whole bill
+console.log("and with the taxes it will be " + amount);
+
+//and here we check if we could afford the whole purchase
+if(amount > bankAccount){
+	console.log("No, you cant afford it.")
+}else{
+	console.log("Yes, go ahead!")
+}
+
+</script>
+</body>
+</html>
